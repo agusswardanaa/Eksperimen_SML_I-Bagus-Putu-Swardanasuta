@@ -100,6 +100,8 @@ def preprocess_data(dataset, target_column, save_path, file_path):
     Y_train.to_csv("preprocessing/dataset/Y_train.csv", index=False)
     Y_test.to_csv("preprocessing/dataset/Y_test.csv", index=False)
 
+    return X_train, X_test, Y_train, Y_test
+
 
 if __name__ == "__main__":
     dataset = pd.read_csv("crop_yield.csv")
